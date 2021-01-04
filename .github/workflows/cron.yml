@@ -28,7 +28,7 @@ jobs:
 
       - name: Run owl
         run:
-          poetry run python src/carrier-owl.py
+          poetry run python src/carrier-owl.py || true
         env:
           SLACK_ID: ${{ secrets.SLACK_ID }}
 
